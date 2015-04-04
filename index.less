@@ -1,0 +1,41 @@
+@base: 100%;
+@margin-left:30%;
+@diff: @base - @margin-left;
+
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+#map-canvas
+{
+    position: absolute;
+
+    height: 100%;
+    
+    width: calc(@base - @margin-left);
+    margin-left: @margin-left;
+
+    z-index: 100;
+}
+
+.side-bar{
+    height: @base;
+    width: @margin-left;
+    background-color: red;
+    position: absolute;
+    z-index: 200;
+    
+    #center-button{
+//        height: 50px;
+//        width: 50px;
+    }
+    
+    .city-list{
+        background-color: skyblue;
+    }
+    
+}

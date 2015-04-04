@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!--       Stylesheet     -->
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet/less" href="index.less">
+
+    </head>
+
+
+    <body>
+
+        <div class="container side-bar">
+            
+            <button class='btn' onclick="XMap.center()">center</button>
+            <button class='btn' onclick="XMap.addMarker()">mark</button>
+            <button class='btn' onclick="CityList.addCityMarkers()">markers</button>
+            <button class='btn' onclick="XMap.removeMarkers()">remove</button>
+            
+            <div id="container-city"></div>
+            
+        </div>
+
+        <div id="map-canvas"></div>
+
+
+        <!--        Compilatore less   -->
+        <script src="bower_components/less/dist/less.min.js"></script>
+        <!--    Librery script init    -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfL042UUEU0WS-RhaXEAOfPLmHaNxChhA"></script>
+        <script src="app.js"></script>
+
+    </body>
+</html>
